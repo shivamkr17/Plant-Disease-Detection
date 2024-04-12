@@ -1,1 +1,1 @@
-opencv-python
+OpenCV – 4.9.0
