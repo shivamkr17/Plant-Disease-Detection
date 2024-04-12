@@ -1,4 +1,4 @@
-!pip install opencv-python
+pip install opencv-python
 import cv2
 from tensorflow.keras.models import load_model
 import os
