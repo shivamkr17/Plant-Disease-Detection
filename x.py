@@ -24,7 +24,7 @@ def main():
             original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Gyanbardhan</p>'
             st.markdown(original_title, unsafe_allow_html=True)
     with col4:
-        #filename = "gyan.jpeg"
+        filename = "gyan.jpeg"
         #img = cv2.imread(filename)
         img=Image.open(filename)
         img=img.resize((50,50))
