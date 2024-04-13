@@ -1,4 +1,12 @@
 import cv2
+import base64
+
+page_be_image = f'“”
+
+[data-testid="stAppViewContainer"]> .main{{ background-image: url("Image Location"); background-size: cover; background-position: top left; background-repeat: no-repeat; }} [data-testid="stHeader"]> div{{ background-color: rgba(0, 0, 0, 0); }}
+ “”'
+
+st.markdown(page_be_image,unsafe_allow_html=True)
 from tensorflow.keras.models import load_model
 import os
 from PIL import Image
