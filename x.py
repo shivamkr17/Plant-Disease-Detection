@@ -31,11 +31,11 @@ def main():
         #img=cv2.resize(img,(50,50))
         #image=Image.open(img)
         st.image(img)
-    st.markdown(
-    """
-    <link rel="stylesheet" type="text/css" href="Background.jpg">
-    """,
-    unsafe_allow_html=True)
+    #st.markdown(
+    #"""
+    #<link rel="stylesheet" type="text/css" href="Background.jpg">
+    #""",
+    #unsafe_allow_html=True)
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
     modelVGG16=load_model("Model_VGG16.h5")
     modelVGG19=load_model("Model_VGG19.h5")
