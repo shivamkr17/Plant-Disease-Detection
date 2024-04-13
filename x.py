@@ -31,15 +31,15 @@ def main():
         #img=cv2.resize(img,(50,50))
         #image=Image.open(img)
         st.image(img)
-    page_bg_img = '''
+    st.markdown(
+    """
     <style>
-    body {
-    background-image: url("https://github.com/Gyanbardhan/Plant-Disease-Detection/blob/main/Background.jpg");
-    background-size: cover;        
+    .reportview-container {
+        background: url("https://www.example.com/image.jpg");
     }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+   </style>
+    """,
+    unsafe_allow_html=True)
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
     modelVGG16=load_model("Model_VGG16.h5")
     modelVGG19=load_model("Model_VGG19.h5")
