@@ -19,7 +19,9 @@ def prediction(model,img,size):
 
 def main():
     st.title('Plant Disease Detection')
-    st.title('Gyanbardhan')
+    original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Gyanbardhan</p>'
+    st.markdown(original_title, unsafe_allow_html=True)
+    #st.title('Gyanbardhan')
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
     modelVGG16=load_model("Model_VGG16.h5")
     modelVGG19=load_model("Model_VGG19.h5")
