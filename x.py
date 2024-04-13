@@ -35,7 +35,7 @@ def main():
     """
     <style>
     .reportview-container {
-        background: url("https://www.example.com/image.jpg");
+        background: url("https://github.com/Gyanbardhan/Plant-Disease-Detection/blob/main/Background.jpg");
     }
    </style>
     """,
