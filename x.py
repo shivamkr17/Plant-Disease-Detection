@@ -34,8 +34,9 @@ def main():
     page_bg_img = '''
     <style>
     body {
-    background-image: url("https://unsplash.com/photos/green-leafed-plant-rjIacQc-uYs");
-    background-size: cover;        }
+    background-image: url("https://github.com/Gyanbardhan/Plant-Disease-Detection/blob/main/Background.jpg");
+    background-size: cover;        
+    }
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
