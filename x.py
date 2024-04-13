@@ -19,8 +19,18 @@ def prediction(model,img,size):
 
 def main():
     st.title('Plant Disease Detection')
-    original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Gyanbardhan</p>'
-    st.markdown(original_title, unsafe_allow_html=True)
+    col3,col4=st.columns(2)
+    with col3:
+            original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Gyanbardhan</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+    with col2:
+        filename = "gyan.jpeg"
+        img = cv2.imread(filename)
+        img=Image.open(img)
+        img=img.resize((50,50))
+        #img=cv2.resize(img,(50,50))
+        image=Image.open(img)
+        st.image(image)
     #st.title('Gyanbardhan')
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
     modelVGG16=load_model("Model_VGG16.h5")
