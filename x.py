@@ -24,13 +24,13 @@ def main():
             original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Gyanbardhan</p>'
             st.markdown(original_title, unsafe_allow_html=True)
     with col4:
-        filename = "gyan.jpeg"
+        #filename = "gyan.jpeg"
         #img = cv2.imread(filename)
         img=Image.open(filename)
         img=img.resize((50,50))
         #img=cv2.resize(img,(50,50))
         #image=Image.open(img)
-        st.image(image)
+        st.image(img)
     #st.title('Gyanbardhan')
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
     modelVGG16=load_model("Model_VGG16.h5")
