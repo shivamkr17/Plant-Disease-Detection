@@ -33,7 +33,7 @@ def main():
         st.image(img)
     st.markdown(
     """
-    <link rel="stylesheet" type="text/css" href="https://github.com/Gyanbardhan/Plant-Disease-Detection/blob/main/Background.jpg">
+    <link rel="stylesheet" type="text/css" href="Background.jpg">
     """,
     unsafe_allow_html=True)
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
