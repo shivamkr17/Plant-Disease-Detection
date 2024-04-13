@@ -21,7 +21,7 @@ def main():
     st.title('Plant Disease Detection')
     col3,col4=st.columns(2)
     with col3:
-            original_title = '<h4 style="font-family:Courier;font-size: 10px;">Gyanbardhan</h4>'
+            original_title = '<h3 style="font-family:Courier;font-size: 10px;">Gyanbardhan</h3>'
             st.markdown(original_title, unsafe_allow_html=True)
     with col4:
         filename = "gyan.jpeg"
