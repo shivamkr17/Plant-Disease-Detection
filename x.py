@@ -23,7 +23,7 @@ def main():
     with col3:
             original_title = '<p style="font-family:Courier; color:Blue; font-size: 20px;">Gyanbardhan</p>'
             st.markdown(original_title, unsafe_allow_html=True)
-    with col2:
+    with col4:
         filename = "gyan.jpeg"
         img = cv2.imread(filename)
         img=Image.open(img)
