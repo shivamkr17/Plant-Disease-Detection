@@ -19,7 +19,7 @@ def prediction(model,img,size):
 
 def main():
     st.title('Plant Disease Detection')
-    col3,col4,col5,col6,col7,col8,col9,col10=st.columns(8)
+    col3,col4,col5,col6,col7,col8=st.columns(6)
     with col3:
             original_title = '<h2 style="font-family:Courier;font-size: 17px;">Gyanbardhan</h2>'
             st.markdown(original_title, unsafe_allow_html=True)
