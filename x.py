@@ -31,7 +31,16 @@ def main():
         #img=cv2.resize(img,(50,50))
         #image=Image.open(img)
         st.image(img)
-    #st.title('Gyanbardhan')
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://unsplash.com/photos/green-leafed-plant-rjIacQc-uYs");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
     img=st.file_uploader("Upload an Image......",type=["jpg",".webp","jpeg","png"])
     modelVGG16=load_model("Model_VGG16.h5")
     modelVGG19=load_model("Model_VGG19.h5")
