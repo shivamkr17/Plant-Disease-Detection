@@ -19,18 +19,7 @@ def prediction(model,img,size):
 
 def main():
     st.title('Plant Disease Detection')
-    col3,col4,col5,col6,col7,col8=st.columns(6)
-    with col3:
-            original_title = '<h2 style="font-family:Courier;font-size: 17px;">Gyanbardhan</h2>'
-            st.markdown(original_title, unsafe_allow_html=True)
-    with col4:
-        filename = "gyan.jpeg"
-        #img = cv2.imread(filename)
-        img=Image.open(filename)
-        img=img.resize((25,25))
-        #img=cv2.resize(img,(50,50))
-        #image=Image.open(img)
-        st.image(img)
+   
     #st.markdown(
     #"""
     #<link rel="stylesheet" type="text/css" href="Background.jpg">
